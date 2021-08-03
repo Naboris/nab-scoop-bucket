@@ -5,7 +5,7 @@
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/bvieira/sv4git/releases/download/2.2.1/git-sv_2.2.1_windows_amd64.zip",
+            "url": "https://github.com/bvieira/sv4git/releases/download/v2.2.1/git-sv_2.2.1_windows_amd64.zip",
             "hash": "aa38c1f623aca6f9902ad46ac70266964dc564e6bb650ab4ce1b223fb9e3396b"
         }
     },
@@ -15,7 +15,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/bvieira/sv4git/releases/download/$version/git-sv_$version_windows_amd64.zip"
+                "url": "https://github.com/bvieira/sv4git/releases/download/v$version/git-sv_$version_windows_amd64.zip"
             }
         }
     }
