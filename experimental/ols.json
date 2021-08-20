@@ -9,6 +9,7 @@
             "hash": "a081465c5357569452b0c7bd7f5038b1b1cc2fd410b27fa26455eb3c17fdba1e"
         }
     },
+    "pre_install": "Rename-Item $original_dir\\ols-x86_64-pc-windows-msvc.exe $original_dir\\ols.exe",
     "bin": "ols.exe",
     "checkver": {
         "url": "https://github.com/DanielGavin/ols/releases",
