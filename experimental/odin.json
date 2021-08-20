@@ -1,14 +1,25 @@
 {
-    "version": "dev-2021-05",
+    "version": "dev-2021-08",
     "homepage": "https://github.com/odin-lang/Odin",
     "description": "The Odin programming language is fast, concise, readable, pragmatic and open sourced. It is designed with the intent of creating an alternative to C with the following goals:",
     "license": "BSD-2-Clause",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/odin-lang/Odin/releases/download/dev-2021-05/odin-windows-amd64-dev-2021-05.zip",
-            "hash": "0937379c77904af5180f841dcd29030017480740920ae59b50a67c3a922a2116"
+            "url": "https://github.com/odin-lang/Odin/releases/download/dev-2021-08/odin-windows-amd64-dev-2021-08.zip",
+            "hash": "738aecda5d8f022ce663bdd0848538d381c0c7ea3f899c52e77b1c939d84101d"
         }
     },
     "extract_dir": "windows_artifacts",
-    "bin": "odin.exe"
+    "bin": "odin.exe",
+    "checkver": {
+        "url": "https://github.com/odin-lang/Odin/releases",
+        "regex": "\\/releases\\/tag\\/(dev-\\d{4}-\\d{2})"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/odin-lang/Odin/releases/download/$version/odin-windows-amd64-$version.zip"
+            }
+        }
+    }
 }
